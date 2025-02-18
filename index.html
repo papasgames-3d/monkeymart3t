@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="en-US">
 <head>
@@ -393,7 +392,8 @@
 		<div class="container">
 			<section id="game" class="game-wrapper">
 				<div class="game-container" style="margin-top: 15px;">
-					<div data-url="http://papasgames3d.com/MonkeyMart/" id="game-arena">
+					<!-- Thay đổi data-url để sử dụng URL trực tiếp của game -->
+					<div data-url="https://games.crazygames.com/en_US/monkey-mart/index.html" id="game-arena">
 						<div class="talpa-splash-container">
 							<div class="talpa-splash-top">
 								<div>
@@ -426,7 +426,19 @@
 				function playGame() {
 					let gameUrl = document.querySelector('#game-arena').dataset.url;
 					let gameTitle = "Monkey Mart";
-					document.querySelector('#game-arena').innerHTML = `<iframe title="${gameTitle}" src="${gameUrl}" allowfullscreen frameborder="0" width="100%" height="100%" scrolling="none"></iframe>`
+					// Thêm các thuộc tính bảo mật cho iframe
+					document.querySelector('#game-arena').innerHTML = `
+						<iframe 
+							title="${gameTitle}" 
+							src="${gameUrl}" 
+							allowfullscreen 
+							allow="fullscreen; autoplay; encrypted-media"
+							frameborder="0" 
+							width="100%" 
+							height="100%" 
+							scrolling="none"
+							sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation"
+						></iframe>`;
 				}
 				function openFullscreen() {
 					let elem = document.getElementById("game-arena");
