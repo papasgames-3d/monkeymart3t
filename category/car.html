@@ -1,11 +1,12 @@
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4151519079019358" crossorigin="anonymous"></script>
 <!doctype html>
 <html class="no-js" lang="en-US">
 <head>
 	<meta charset="utf-8">
 	<meta content="noindex, follow" name="robots"/>
 	<meta content="ie=edge" http-equiv="x-ua-compatible">
-	<title>Car Games</title>
-	<meta content=" A world of Car Games on your school Chromebooks" name="description">
+	<title>Car Games - monkeymart.one</title>
+	<meta content="Play the best car games online for free" name="description">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -21,9 +22,16 @@
 	<link href="/css/plugins.css" rel="stylesheet">
 	<!-- Main Stylesheet -->
 	<link href="/css/style.css" rel="stylesheet">
-	<!-- Responsive css -->
-	<link href="/css/responsive.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3/lazysizes.min.js" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=" crossorigin="anonymous"></script>
+	<!-- Category Pages Stylesheet -->
+	<link href="/css/category-pages.css" rel="stylesheet">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-54L5E2NJ3K"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-54L5E2NJ3K');
+	</script>
 </head>
 <body>
 <!-- Body main wrapper start -->
@@ -54,13 +62,19 @@
 									<li><a title="puzzle" href="/category/puzzle.html">Puzzle</a></li>
 									<li><a href="#">More</a>
 										<ul class="sub-menu">
-											<li><a title="skill" href="/category/skill.html">Skill</a></li>
-											<li><a title="adventure" href="/category/adventure.html"> Adventure</a>
-											<li><a title="shooting" href="/category/shooting.html">Shooting</a>
-											<li><a title="2-player" href="/category/2-player.html"> 2 Player</a>
-											<li><a title="multiplayer" href="/category/multiplayer.html"> Multiplayer</a>
-											<li><a title="action" href="/category/action.html"> Action</a>
-											<li><a title="3d" href="/category/3d.html"> 3D</a>
+											<li><a href="/category/skill.html">Skill</a></li>
+											<li><a href="/category/stickman.html">Stickman</a></li>
+											<li><a href="/category/adventure.html">Adventure</a></li>
+											<li><a href="/category/shooting.html">Shooting</a></li>
+											<li><a href="/category/fighting.html">Fighting</a></li>
+											<li><a href="/category/2-player.html">2 Player</a></li>
+											<li><a href="/category/multiplayer.html">Multiplayer</a></li>
+											<li><a href="/category/action.html">Action</a></li>
+											<li><a href="/category/3d.html">3D</a></li>
+											<li><a href="/category/car.html">Car</a></li>
+											<li><a href="/category/moto.html">Moto</a></li>
+											<li><a href="/category/idle.html">Idle</a></li>
+											<li><a href="/category/fnf.html">FNF</a></li>
 										</ul>
 									</li>
 								</ul>
@@ -69,6 +83,12 @@
 					</div>
 				</div>
 				<div class="ltn__header-options ltn__header-options-2">
+					<div class="dark-mode-toggle" style="margin-right: 20px;">
+						<button id="darkModeToggle" style="background: #8B4513; border: none; border-radius: 20px; padding: 5px 15px; cursor: pointer; display: flex; align-items: center;">
+							<span id="darkModeIcon" style="color: #FFF5E1; margin-right: 5px;">🌙</span>
+							<span id="darkModeText" style="color: #FFF5E1; font-size: 14px;">Dark Mode</span>
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -78,7 +98,7 @@
 	<div class="ltn__product-area ltn__product-gutter pb-70">
 		<div class="container">
 			<!--  ---------------------------------- -->
-			<div class="section-title-area ltn__section-title-1 text-center" style="padding-top:20px">
+			<div class="section-title-area ltn__section-title-1 text-center">
 				<h1 class="section-title">Car Games</h1>
 			</div>
 			<div class="ad-horizontal">
@@ -894,7 +914,7 @@
 				<div class="row">
 					<div class="col-md-6 col-12">
 						<div class="ltn__copyright-design clearfix">
-							<p>papasgamesfree.io @ <span class="current-year">2024</span>
+							<p>Monkeymart.one @ <span class="current-year">2024</span>
 								<span style="padding-left:15px"><a href="/privacy-policy.html">Privacy Policy</a></span>
 								<span style="padding-left:15px"><a href="/terms.html">Terms and Conditions</a></span>
 								<span style="padding-left:15px"><a href="/contact.html">Contact Us</a></span>
@@ -903,7 +923,8 @@
 					</div>
 					<div class="col-md-6 col-12" style="padding-left: 350px;">
 						<div class="ltn__copyright-design clearfix">
-							<p> Contact Us: unblockgamespremium@gmail.com</p>
+							<p> Contact Us: mballjames47@gmail.com
+</p>
 						</div>
 					</div>
 				</div>
@@ -927,5 +948,38 @@
 <script src="/js/plugins.js"></script>
 <!-- Main JS -->
 <script src="/js/main.js"></script>
+<script>
+	const darkModeToggle = document.getElementById('darkModeToggle');
+	const darkModeIcon = document.getElementById('darkModeIcon');
+	const darkModeText = document.getElementById('darkModeText');
+	const body = document.body;
+
+	const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+	if (isDarkMode) {
+		enableDarkMode();
+	}
+
+	darkModeToggle.addEventListener('click', () => {
+		if (body.classList.contains('dark-mode')) {
+			disableDarkMode();
+		} else {
+			enableDarkMode();
+		}
+	});
+
+	function enableDarkMode() {
+		body.classList.add('dark-mode');
+		darkModeIcon.textContent = '☀️';
+		darkModeText.textContent = 'Light Mode';
+		localStorage.setItem('darkMode', 'enabled');
+	}
+
+	function disableDarkMode() {
+		body.classList.remove('dark-mode');
+		darkModeIcon.textContent = '🌙';
+		darkModeText.textContent = 'Dark Mode';
+		localStorage.setItem('darkMode', null);
+	}
+</script>
 </body>
 </html>

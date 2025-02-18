@@ -1,0 +1,294 @@
+/* Header styles */
+.ltn__header-middle-area {
+    background-color: #FFF5E1 !important;
+}
+
+.ltn__main-menu > ul > li > a {
+    color: #8B4513 !important;
+}
+
+/* Game frame styles */
+.game-frame {
+    background-color: #FFF5E1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 15px rgba(139, 69, 19, 0.1);
+}
+
+.game-frame iframe {
+    width: 100%;
+    height: 600px;
+    border: 2px solid #8B4513;
+    border-radius: 4px;
+}
+
+/* Footer styles */
+.ltn__footer-area {
+    margin-top: 30px;
+}
+
+.ltn__copyright-area.section-bg-2 {
+    background-color: #8B4513 !important;
+    padding: 15px 0;
+}
+
+.ltn__copyright-design p {
+    color: #FFF5E1 !important;
+    margin-bottom: 0;
+}
+
+.ltn__copyright-design a {
+    color: #FFF5E1 !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.ltn__copyright-design a:hover {
+    color: #ffd700 !important;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #FFF5E1;
+}
+
+/* Dark mode header & menu */
+.dark-mode .ltn__header-middle-area {
+    background-color: #2d2d2d !important;
+}
+
+.dark-mode .ltn__main-menu > ul > li > a {
+    color: #FFF5E1 !important;
+}
+
+/* Dark mode submenu */
+.dark-mode .ltn__main-menu .sub-menu {
+    background-color: #2d2d2d !important;
+    border: 1px solid #FFF5E1;
+    box-shadow: 0 2px 15px rgba(255, 245, 225, 0.1);
+}
+
+.dark-mode .ltn__main-menu .sub-menu li a {
+    color: #FFF5E1 !important;
+}
+
+.dark-mode .ltn__main-menu .sub-menu li:hover {
+    background-color: #8B4513 !important;
+}
+
+/* Dark mode game frame */
+.dark-mode .game-frame {
+    background-color: #2d2d2d;
+    box-shadow: 0 2px 15px rgba(255, 245, 225, 0.1);
+}
+
+.dark-mode .game-frame iframe {
+    border-color: #FFF5E1;
+}
+
+/* Dark mode title */
+.dark-mode .section-title-area .section-title {
+    color: #FFF5E1 !important;
+}
+
+/* Submenu styles */
+.ltn__main-menu .sub-menu {
+    background-color: #FFF5E1 !important;
+    border: 1px solid #8B4513;
+    padding: 8px 0;
+    min-width: 200px;
+    box-shadow: 0 2px 15px rgba(139, 69, 19, 0.1);
+}
+
+.ltn__main-menu .sub-menu li {
+    padding: 0;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+}
+
+.ltn__main-menu .sub-menu li:hover {
+    background-color: #8B4513 !important;
+}
+
+.ltn__main-menu .sub-menu li a {
+    color: #8B4513 !important;
+    font-size: 14px;
+    display: block;
+    padding: 8px 20px;
+    width: 100%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.ltn__main-menu .sub-menu li:hover a {
+    color: #FFF5E1 !important;
+}
+
+/* Scroll up button */
+.ltn__scroll-top,
+.go-top,
+.go-top-btn,
+.scroll-top,
+#scrollUp {
+    background-color: #8B4513 !important;
+    color: #FFF5E1 !important;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.ltn__scroll-top:hover,
+.go-top:hover,
+.go-top-btn:hover,
+.scroll-top:hover,
+#scrollUp:hover {
+    background-color: #6b3410 !important;
+    transform: translateY(-3px);
+}
+
+.ltn__scroll-top i,
+.go-top i,
+.go-top-btn i,
+.scroll-top i,
+#scrollUp i {
+    color: #FFF5E1 !important;
+    font-size: 20px;
+}
+
+/* Dark mode button */
+#darkModeToggle {
+    display: flex;
+    align-items: center;
+    background: #8B4513;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #FFF5E1;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    background: #6b3410;
+}
+
+#darkModeIcon {
+    margin-right: 5px;
+}
+
+#darkModeText {
+    font-size: 14px;
+}
+
+/* Game thumbnail and container */
+.talpa-splash-container {
+    text-align: center;
+}
+
+.talpa-splash-top {
+    margin-bottom: 20px;
+}
+
+.talpa-splash-top > div > div:first-child {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+    background: var(--thumb);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 15px rgba(139, 69, 19, 0.1);
+}
+
+/* Dark mode for thumbnail */
+.dark-mode .talpa-splash-top > div > div:first-child {
+    box-shadow: 0 2px 15px rgba(255, 245, 225, 0.1);
+}
+
+/* Play Now button */
+.talpa-btn-play {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.talpa-btn-play span {
+    background-color: #8B4513;
+    border-radius: 5px;
+    padding: 12px 25px;
+    color: #FFF5E1 !important;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.talpa-btn-play span:hover {
+    background-color: #6b3410 !important;
+    transform: translateY(-2px);
+}
+
+.talpa-btn-play svg {
+    fill: #FFF5E1;
+    margin-left: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+/* Full screen button */
+#fullscreen-btn,
+#comments-btn {
+    background-color: #8B4513;
+    color: #FFF5E1;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+#fullscreen-btn:hover,
+#comments-btn:hover {
+    background-color: #6b3410;
+    transform: translateY(-2px);
+}
+
+#fullscreen-btn svg,
+#comments-btn svg {
+    fill: #FFF5E1;
+}
+
+/* Dark mode adjustments */
+.dark-mode #darkModeToggle {
+    background: #6b3410;
+}
+
+.dark-mode .talpa-btn-play,
+.dark-mode #fullscreen-btn,
+.dark-mode #comments-btn {
+    background-color: #6b3410;
+}
+
+.dark-mode .talpa-btn-play span:hover,
+.dark-mode #fullscreen-btn:hover,
+.dark-mode #comments-btn:hover {
+    background-color: #8B4513;
+} 

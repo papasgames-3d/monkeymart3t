@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /go/
+Allow: /img/
+Allow: /css/
+Allow: /js/
+
+# Game pages
+Allow: /*.html$
+
+# Block category pages
+Disallow: /category/
+
+# Block utility files
+Disallow: /site.webmanifest
+Disallow: /safari-pinned-tab.svg
+Disallow: /LICENSE
+
+# Block utility pages
+Disallow: /privacy-policy.html
+Disallow: /terms.html
+Disallow: /contact.html
+
+# Sitemap
+Sitemap: https://monkeymart.one/sitemap.xml 
