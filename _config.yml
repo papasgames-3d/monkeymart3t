@@ -1,11 +1,16 @@
 # Site settings
 title: Monkey Mart Games
 description: Play free online games at Monkey Mart
-url: "https://monkeymart.one"
+url: https://monkeymart.one
 baseurl: ""
 
 # Build settings
-include: [".well-known"]
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files
 exclude:
   - README.md
   - LICENSE
@@ -13,11 +18,6 @@ exclude:
   - node_modules
   - package.json
   - package-lock.json
-  
-# SEO settings
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
 
 # Custom headers
 webrick:
@@ -34,17 +34,6 @@ defaults:
 # GitHub Pages settings
 github:
   is_project_page: false
-
-# Exclude files
-exclude:
-  - README.md
-  - LICENSE
-  - .gitignore
-  - server.js
-  - server.py
-  - package.json
-  - package-lock.json
-  - node_modules
 
 # Custom 404 page
 defaults:
