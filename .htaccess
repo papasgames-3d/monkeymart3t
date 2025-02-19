@@ -16,10 +16,17 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Allow access to these file types
-<FilesMatch ".(css|js|ico|jpg|jpeg|png|gif|webp)$">
-    Header set Cache-Control "max-age=31536000"
-</FilesMatch>
+# Remove trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Set correct content type for different file types
+AddType application/x-httpd-php .php
+AddType text/html .html
+AddType text/xml .xml
+
+# Enable CORS for all domains
+Header set Access-Control-Allow-Origin "*"
 
 # Prevent viewing of .htaccess file
 <Files .htaccess>
@@ -60,4 +67,13 @@ AddType application/manifest+json .webmanifest
     AddOutputFilterByType DEFLATE application/x-javascript
     AddOutputFilterByType DEFLATE application/json
     AddOutputFilterByType DEFLATE application/manifest+json
-</IfModule> 
+</IfModule>
+
+# Cache control
+<FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "max-age=3600, public"
+</FilesMatch>
+
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|ico|webp)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch> 

@@ -6,8 +6,9 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://Monkeymart.one/</loc>
-  <lastmod>2024-09-19T04:42:35+00:00</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2024-02-19T10:00:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
 </url>
 <url>
   <loc>https://Monkeymart.one/papas-freezeria.html</loc>
