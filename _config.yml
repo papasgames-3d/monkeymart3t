@@ -1,11 +1,28 @@
 # Site settings
 title: Monkey Mart Games
 description: Play free online games at Monkey Mart
-baseurl: "" # Để trống nếu dùng custom domain
-url: "https://monkeymart.one" # URL của site
+url: "https://monkeymart.one"
+baseurl: ""
 
 # Build settings
-permalink: pretty
+include: [".well-known"]
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+  - node_modules
+  - package.json
+  - package-lock.json
+  
+# SEO settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Custom headers
+webrick:
+  headers:
+    "Access-Control-Allow-Origin": "*"
 
 # 404 page
 defaults:
@@ -23,13 +40,11 @@ exclude:
   - README.md
   - LICENSE
   - .gitignore
-  - node_modules
+  - server.js
+  - server.py
   - package.json
   - package-lock.json
-
-plugins:
-  - jekyll-sitemap
-  - jekyll-redirect-from
+  - node_modules
 
 # Custom 404 page
 defaults:

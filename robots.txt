@@ -1,3 +1,4 @@
+# Allow all crawlers
 User-agent: *
 Allow: /
 Allow: /index.html
@@ -9,13 +10,19 @@ Allow: /js/
 # Game pages
 Allow: /*.html$
 
-# Block category pages
-Disallow: /category/
-
 # Block utility files
 Disallow: /site.webmanifest
 Disallow: /safari-pinned-tab.svg
 Disallow: /LICENSE
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /_config.yml
+Disallow: /README.md
+Disallow: /.gitignore
+Disallow: /.nojekyll
+
+# Block category pages
+Disallow: /category/
 
 # Block utility pages
 Disallow: /privacy-policy.html
