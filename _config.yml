@@ -1,0 +1,22 @@
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+# Custom 404 page
+defaults:
+  - scope:
+      path: "404.html"
+    values:
+      permalink: /404.html
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+  - server.js
+  - server.py
+  - package.json
+  - package-lock.json
+  - node_modules 
