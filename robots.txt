@@ -6,6 +6,7 @@ Allow: /go/
 Allow: /img/
 Allow: /css/
 Allow: /js/
+Allow: /ads.txt
 
 # Game pages
 Allow: /*.html$
