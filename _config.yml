@@ -1,4 +1,32 @@
+# Site settings
+title: Monkey Mart Games
+description: Play free online games at Monkey Mart
+baseurl: "" # Để trống nếu dùng custom domain
+url: "https://monkeymart.one" # URL của site
+
+# Build settings
 permalink: pretty
+
+# 404 page
+defaults:
+  - scope:
+      path: "404.html"
+    values:
+      permalink: /404.html
+
+# GitHub Pages settings
+github:
+  is_project_page: false
+
+# Exclude files
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+  - node_modules
+  - package.json
+  - package-lock.json
+
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
