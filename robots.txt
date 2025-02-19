@@ -30,5 +30,6 @@ Disallow: /privacy-policy.html
 Disallow: /terms.html
 Disallow: /contact.html
 
-# Sitemap
+# Sitemaps
+Sitemap: https://monkeymart.one/sitemapindex.xml
 Sitemap: https://monkeymart.one/sitemap.xml 
