@@ -113,4 +113,24 @@
 
 .dark-mode #darkModeToggle {
     color: #FFF5E1;
-} 
+}
+
+/* Layout specific */
+.grid-container { ... }
+.flex-container { ... }
+.column-layout { ... }
+
+/* Page layouts */
+.game-layout { ... }
+.blog-layout { ... }
+
+/* Complex responsive */
+@media (max-width: 768px) {
+    .layout-specific-rules { ... }
+}
+
+/* Chỉ giữ trong layout.css */
+- Grid system
+- Specific layout components
+- Page-specific layouts
+- Complex responsive layouts 

@@ -183,7 +183,7 @@
     font-size: 20px;
 }
 
-/* Section title styles */
+/* Section title styles - Updated */
 .section-title-area.ltn__section-title-1 {
     padding: 0 !important;
     margin-top: 15px !important;
@@ -191,8 +191,11 @@
     margin-bottom: 20px !important;
 }
 
+.section-title-area.ltn__section-title-1 h3,
+.section-title-area.mt-50 h3,
+h1.section-title,
 .section-title {
-    color: #FFF5E1 !important;
+    color: #FFF5E1 !important; /* Màu trắng cho mọi section title trong light mode */
     padding: 10px;
     margin: 0;
     text-align: center;
@@ -215,7 +218,9 @@ body #game {
 body.dark-mode .section-title-area h3,
 body.dark-mode .section-title-area h3.section-title,
 body.dark-mode .mt-50 h3,
-body.dark-mode .ltn__section-title-1 h3 {
+body.dark-mode .ltn__section-title-1 h3,
+body.dark-mode h1.section-title,
+body.dark-mode .section-title {
     color: #ffffff !important;
 }
 
